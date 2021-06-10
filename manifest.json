@@ -1,0 +1,11 @@
+{
+  "manifest_version": 2,
+  "name": "Sanitizer",
+  "version": "0.1",
+  "description": "A PoC Chrome extension to hide select Google search results",
+  "content_scripts": [{
+    "js": ["content.js"],
+    "matches": ["https://www.google.com/*", "https://www.google.ca/*"],
+    "run_at":  "document_idle"
+  }]
+}
