@@ -1,6 +1,6 @@
 function hideResults() {
-    // select all search results (with "div.g" selector)
-    var searchResults = document.querySelectorAll('div.g');
+    // select all search results (with "#rso > div" selector)
+    var searchResults = document.querySelectorAll('#rso > div');
 
     // iterate through all search results
     for (var i = 0; i < searchResults.length; i++) {
